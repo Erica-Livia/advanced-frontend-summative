@@ -55,6 +55,7 @@
 }
 
 
+
 /* Sectors.html style */
 
 .sect {
@@ -81,66 +82,52 @@
 .card-body {
     position: relative;
     text-align: center;
+    height: 200px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 0px;
     flex-grow: 1;
 }
 
-.card-text.show {
-    height: auto;
-    /* Expand height to show card text when the .show class is added */
-    transition: height 1s ease-in-out;
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+
 }
 
+.card-text {
+    height: 0;
+    /* Initially hide card text */
+    overflow: hidden;
+    /* Hide overflow content */
+    transition: height 1s ease-in-out;
+
+}
+
+.card-text.show {
+    height: auto; /* Expand height to show card text when the .show class is added */
+    transition: height 1s ease-in-out;
+}
+  
 .card:hover .card-text {
     height: auto;
     /* Expand height to show card text when hovering over the card */
 }
-
 .card:hover .material-symbols-outlined {
     display: none;
 }
-
 .card-title {
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-
-
-/* Home page style*/
-
-.hero-section {
-    padding: 7%;
-}
-
-.clk {
-    background-color: rgba(32, 96, 61, 1);
-    border: none;
-}
-
-.clk:hover {
-    background-color: rgba(0, 163, 224, 1);
-}
-
-@media (max-width:900px) {
-    .col-lg-3 {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
-
-.erc {
-    flex-direction: row;
-}
-
-.home {
-    background-image: linear-gradient(to bottom, rgba(250, 210, 1, 0.7), rgba(250, 210, 1, 0.4), rgba(250, 210, 1, 0.5));
-}
-
-/* News page style*/
-
-.bck {
-    background-color: rgba(32, 96, 61, 1) !important;
-    z-index: 1;
+.material-symbols-outlined {
+    padding: 10px;
 }
