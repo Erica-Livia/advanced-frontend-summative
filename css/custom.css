@@ -31,7 +31,12 @@
 
 .nav-link {
     color: black;
-}
+    text-transform: lowercase; /* Convert all text to lowercase */
+  }
+  
+  .nav-link::first-letter {
+    text-transform: uppercase; /* Capitalize the first letter */
+  }
 
 .nav-link:hover {
     color: rgba(32, 96, 61, 1);
@@ -46,14 +51,16 @@
 }
 
 .active {
-    color: rgba(250, 210, 1) !important;
+    color: rgb(246, 216, 63) !important;
     border-bottom: 2px solid rgba(250, 210, 1, 0.8);
     width: fit-content;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
-
+}
+.active::first-letter {
+    text-transform: uppercase !important;
 }
 
 .active:hover{
