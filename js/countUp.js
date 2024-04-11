@@ -1,5 +1,5 @@
 var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
+    __assign = Object.assign || function (t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
             s = arguments[i];
             for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
@@ -19,7 +19,7 @@ var CountUp = /** @class */ (function () {
         this.defaults = {
             startVal: 0,
             decimalPlaces: 0,
-            duration: 2,
+            duration: 5,
             useEasing: true,
             useGrouping: true,
             useIndianSeparators: false,
@@ -104,7 +104,7 @@ var CountUp = /** @class */ (function () {
                 }
                 x1 = x3;
             }
-            // optional numeral substitution
+            
             if (_this.options.numerals && _this.options.numerals.length) {
                 x1 = x1.replace(/[0-9]/g, function (w) { return _this.options.numerals[+w]; });
                 x2 = x2.replace(/[0-9]/g, function (w) { return _this.options.numerals[+w]; });
@@ -300,4 +300,4 @@ var CountUp = /** @class */ (function () {
     };
     return CountUp;
 }());
-export { CountUp };
+window.CountUp = CountUp;
