@@ -1,0 +1,39 @@
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.cookie-consent-banner p {
+    margin-bottom: 10px;
+}
+
+.cookie-consent-banner button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#refuseCookiesBtn {
+    background-color: #000;
+    color: white;
+}
+
+#refuseCookiesBtn:hover {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+#acceptCookiesBtn:hover {
+    background-color:  rgba(32, 96, 61, 1);
+    color: white;
+}
