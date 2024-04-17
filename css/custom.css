@@ -83,7 +83,11 @@ header {
 /* Home page style*/
 
 .hero-section {
-    padding: 7%;
+    padding: 0;
+    width:auto;
+    height: 70dvh;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .clk {
