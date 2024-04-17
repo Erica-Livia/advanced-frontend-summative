@@ -26,24 +26,22 @@
     .nav-link:hover {
         color: rgba(32, 96, 61, 1) !important;
     }
-
+    
 }
 
 .nav-link {
     color: black;
-    text-transform: lowercase;
-    /* Convert all text to lowercase */
-}
-
-.nav-link::first-letter {
-    text-transform: uppercase;
-    /* Capitalize the first letter */
-}
+    text-transform: lowercase; /* Convert all text to lowercase */
+  }
+  
+  .nav-link::first-letter {
+    text-transform: uppercase; /* Capitalize the first letter */
+  }
 
 .nav-link:hover {
     color: rgba(32, 96, 61, 1);
     border-bottom: solid rgba(32, 96, 61, 1);
-
+    
 }
 
 .navbar-nav {
@@ -61,12 +59,11 @@
     text-align: center;
     display: flex;
 }
-
 .active::first-letter {
     text-transform: uppercase !important;
 }
 
-.active:hover {
+.active:hover{
     color: rgba(32, 96, 61, 1) !important;
     border-bottom: solid rgba(32, 96, 61, 1);
 }
@@ -75,6 +72,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 
 /* Sectors.html style */
@@ -103,102 +101,52 @@
 .card-body {
     position: relative;
     text-align: center;
+    height: 200px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 0px;
     flex-grow: 1;
 }
 
-.card-text.show {
-    height: auto;
-    /* Expand height to show card text when the .show class is added */
-    transition: height 1s ease-in-out;
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+
 }
 
+.card-text {
+    height: 0;
+    /* Initially hide card text */
+    overflow: hidden;
+    /* Hide overflow content */
+    transition: height 1s ease-in-out;
+
+}
+
+.card-text.show {
+    height: auto; /* Expand height to show card text when the .show class is added */
+    transition: height 1s ease-in-out;
+}
+  
 .card:hover .card-text {
     height: auto;
     /* Expand height to show card text when hovering over the card */
 }
-
 .card:hover .material-symbols-outlined {
     display: none;
 }
-
 .card-title {
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-
-
-/* Home page style*/
-
-.hero-section {
-    padding: 7%;
+.material-symbols-outlined {
+    padding: 10px;
 }
-
-.clk {
-    background-color: rgba(32, 96, 61, 1);
-    border: none;
-}
-
-.clk:hover {
-    background-color: rgba(0, 163, 224, 1);
-}
-
-@media (max-width:900px) {
-    .col-lg-3 {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
-
-.erc {
-    flex-direction: row;
-}
-
-.home {
-    background-image: linear-gradient(to bottom, rgba(250, 210, 1, 0.7), rgba(250, 210, 1, 0.4), rgba(250, 210, 1, 0.5));
-}
-
-/* News page style*/
-
-.bck {
-    background-color: rgba(32, 96, 61, 1) !important;
-    z-index: 1;
-}
-
-
-/* faq */
-
-.faq {
-    background-image: linear-gradient(to bottom, rgba(0, 163, 224, 0.3), rgba(0, 163, 224, 0.4), rgba(0, 163, 224, 0.6), rgba(0, 163, 224, 0.4), rgba(0, 163, 224, 0));
-    max-width: 100%;
-}
-
-.faq-main {
-    width: 100%;
-    padding: 0;
-}
-
-.faqcontainer {
-    padding: 30px;
-    justify-content: center;
-    text-align: center;
-    ;
-}
-
-.faqmore {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-.faqmorecontainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 0 10px;
-}
-
